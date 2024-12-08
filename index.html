@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labbgrupp 35</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .textfield {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .checkbox {
+            margin-bottom: 15px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .output-area {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 30px;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 20px;">Labb 1 - Grupp 35</h1>
+    <form>
+        <label for="color">Färg:</label>
+        <input type="text" name="color" id="color" class="textfield">
+
+        <label for="content">Innehåll:</label>
+        <input type="text" name="content" id="content" class="textfield">
+
+        <label for="divStyle">Stil på boxen:</label>
+        <input type="checkbox" name="divStyle" id="divStyle" class="checkbox">
+
+        <button type="button" name="submit" id="submitbutton" class="button">Ta bort</button>
+    </form>
+    <div id="output" class="output-area"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
